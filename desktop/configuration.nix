@@ -86,7 +86,6 @@
     packages = with pkgs; [
       kdePackages.yakuake
 
-      osu-lazer
 
       floorp
       vesktop
@@ -157,9 +156,6 @@
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Enable steam
-  programs.steam.enable = true;
 
   # Enable virtualization
   # VMware
