@@ -79,6 +79,7 @@
     extensions = with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
       nefrob.vscode-just-syntax
+      christian-kohler.path-intellisense
     ];
   };
 

@@ -1,5 +1,5 @@
-switch:
+sw:
     sudo nixos-rebuild switch --flake .#desktop
 
-update:
+up:
     nix flake update
