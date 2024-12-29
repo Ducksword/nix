@@ -141,6 +141,14 @@
   # Enable zsh
   programs.zsh = {
     enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      # System management
+      switch = sudo nixos-rebuild switch --flake "/home/zach/nix#desktop";
+
+    };  
     ohMyZsh = {
       enable = true;
       theme = "frisk";
