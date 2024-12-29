@@ -15,7 +15,7 @@
       modules = [
         ./desktop/configuration.nix
 
-        
+        ./modules/config/distrobox.nix
 
         inputs.home-manager.nixosModules.home-manager
         {
