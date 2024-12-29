@@ -85,6 +85,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.yakuake
+
+      osu-lazer
+
       floorp
       vesktop
       spotify
