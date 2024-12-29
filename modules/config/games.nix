@@ -9,8 +9,8 @@
   programs.steam.enable = true;
 
   # Enable heroic games
-  programs.gamemode.enable = true;
-  programs.gamescope.enable = true;
-  environment.systemPackages = [pkgs.heroic];
+  # programs.gamemode.enable = true;
+  # programs.gamescope.enable = true;
+  # environment.systemPackages = [pkgs.heroic];
 
 }
