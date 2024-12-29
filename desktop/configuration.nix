@@ -146,7 +146,7 @@
     syntaxHighlighting.enable = true;
     shellAliases = {
       # System management
-      switch = sudo nixos-rebuild switch --flake "/home/zach/nix#desktop";
+      sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
 
     };  
     ohMyZsh = {
