@@ -13,4 +13,7 @@
   # programs.gamescope.enable = true;
   # environment.systemPackages = [pkgs.heroic];
 
+  # Enable Lutris
+  environment.systemPackages = [ pkgs.lutris ];
+
 }
