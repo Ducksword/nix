@@ -3,6 +3,7 @@
   # Games
   users.users.zach.packages = [ 
     pkgs.osu-lazer
+    pkgs.prismlauncher
   ];
 
   # Enable steam
