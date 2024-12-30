@@ -84,8 +84,6 @@
     description = "zach";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.yakuake
-
 
       floorp
       vesktop
@@ -103,8 +101,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-    just
-    nixd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -137,29 +133,7 @@
   # Change kernel version
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # Enable zsh
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
-    shellAliases = {
-      # System management
-      sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
-
-    };  
-    ohMyZsh = {
-      enable = true;
-      theme = "frisk";
-    };
-  };
-
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Enable virtualization
-  # VMware
-  virtualisation.vmware.host.enable = true;
-
   
 }
