@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     # Graphical
     kdePackages.yakuake
+    kdePackages.partitionmanager
 
     # Terminal
     just
