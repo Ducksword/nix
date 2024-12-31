@@ -80,6 +80,7 @@
       jnoortheen.nix-ide
       nefrob.vscode-just-syntax
       christian-kohler.path-intellisense
+      mhutchie.git-graph
     ];
   };
 
