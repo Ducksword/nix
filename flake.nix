@@ -15,10 +15,6 @@
       modules = [
         ./desktop/configuration.nix
 
-        ./modules/config/distrobox.nix
-        ./modules/config/games.nix
-        ./modules/config/utils.nix
-
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
