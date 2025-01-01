@@ -3,4 +3,3 @@ sw:
 
 up:
     nix flake update
-
