@@ -1,15 +1,22 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 
 {
-  # Enable podman and distrobox
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
+  options = {
+    distrobox.enable =
+      lib.mkEnableOption "enable distrobox";
   };
 
-  environment.systemPackages = [
-    pkgs.distrobox
-    pkgs.boxbuddy
-  ];
+  config = lib.mkIf config.distrobox.enable {
+    # Enable podman and distrobox
+    virtualisation.podman = {
+      enable = true;
+      dockerCompat = true;
+    };
 
+    environment.systemPackages = [
+      pkgs.distrobox
+      pkgs.boxbuddy
+    ];
+
+  };
 }
