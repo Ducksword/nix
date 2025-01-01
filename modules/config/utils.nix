@@ -4,9 +4,12 @@
   # system utils
   environment.systemPackages = with pkgs; [
     # Graphical
-    kdePackages.yakuake
+    kdePackages.yakuake # Drop down terminal
     kdePackages.partitionmanager
+    kdePackages.kcalc # Calculator
 
+    parsec-bin
+    
     # Terminal
     just
     nixd
@@ -36,7 +39,7 @@
     shellAliases = {
       # System management
       sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
-
+      ns = "nix-shell -p";
     };  
     ohMyZsh = {
       enable = true;
