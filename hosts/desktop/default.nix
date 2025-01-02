@@ -10,8 +10,6 @@
 
     # games
     ../../modules/games/default.nix
-
-    ../../modules/config/games.nix
   ];
 
   # utils/terminal
@@ -26,4 +24,5 @@
   # games
   lutris.enable = true;
   prismlauncher.enable = true;
+  osu-lazer.enalbe =true;
 }
