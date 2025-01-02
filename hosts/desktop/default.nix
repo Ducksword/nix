@@ -24,5 +24,5 @@
   # games
   lutris.enable = true;
   prismlauncher.enable = true;
-  osu-lazer.enalbe =true;
+  osu-lazer.enable =true;
 }
