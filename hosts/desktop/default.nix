@@ -1,11 +1,15 @@
 { ... }:
 {
   imports = [
+    # utils
     ../../modules/utils/terminal/default.nix
     ../../modules/utils/graphical/default.nix
 
     # kde desktop
     ../../modules/desktops/kde/default.nix
+
+    # games
+    ../../modules/games/default.nix
 
     ../../modules/config/games.nix
   ];
@@ -18,4 +22,7 @@
   # utils/graphical
   vmware.enable = true;
   parsec.enable = true;
+
+  # games
+  lutris.enable = true;
 }

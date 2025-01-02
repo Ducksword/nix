@@ -7,6 +7,6 @@
   };
 
   config = lib.mkIf config.steam.enable {
-    programs.enable.steam = true;
+    programs.steam.enable = true;
   };
 }
