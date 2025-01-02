@@ -4,6 +4,9 @@
     ../../modules/utils/terminal/default.nix
     ../../modules/utils/graphical/default.nix
 
+    # kde desktop
+    ../../modules/desktops/kde/default.nix
+
     ../../modules/config/games.nix
     ../../modules/config/utils.nix
   ];
