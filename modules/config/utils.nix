@@ -10,10 +10,6 @@
 
     parsec-bin
     
-    # Terminal
-    just
-    nixd
-    
   ];
   
 
