@@ -15,5 +15,5 @@
 
   # utils/graphical
   vmware.enable = true;
-  
+  parsec.enable = true;
 }
