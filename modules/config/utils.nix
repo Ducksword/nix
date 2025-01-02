@@ -21,6 +21,6 @@
 
   # Enable virtualization
   # VMware
-  virtualisation.vmware.host.enable = true;
+  
 
 }

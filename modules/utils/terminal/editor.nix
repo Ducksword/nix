@@ -18,10 +18,10 @@
       set tabsize 2
       ";
     };
-  };
 
-  environment.systemPackages = with pkgs; [
-    just # like make
-    nixd # nix lsp
-  ];
+    environment.systemPackages = with pkgs; [
+      just # like make
+      nixd # nix lsp
+    ];
+  };
 }
