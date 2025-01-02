@@ -8,4 +8,6 @@
 
   distrobox.enable = true;
   zsh.enable = true;
+  nano.enable = true;
+  
 }
