@@ -16,7 +16,7 @@
       shellAliases = {
         # System management
         sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
-        ns = "nix-shell -p";
+        calc = "nix shell nixpkgs#python3 --command python";
       };  
       ohMyZsh = {
         enable = true;
