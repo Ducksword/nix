@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    parsec.enable =
-      lib.mkEnableOption "enable parsec";
+    parsec.enable = lib.mkEnableOption "enable parsec";
   };
 
   config = lib.mkIf config.parsec.enable {

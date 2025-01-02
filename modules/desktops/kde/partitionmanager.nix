@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    partitionmanager.enable =
-      lib.mkEnableOption "enable partitionmanager";
+    partitionmanager.enable = lib.mkEnableOption "enable partitionmanager";
   };
 
   config = lib.mkIf config.partitionmanager.enable {

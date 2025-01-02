@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    kcalc.enable =
-      lib.mkEnableOption "enable kcalc";
+    kcalc.enable = lib.mkEnableOption "enable kcalc";
   };
 
   config = lib.mkIf config.kcalc.enable {

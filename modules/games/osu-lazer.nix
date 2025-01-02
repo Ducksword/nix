@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    osu-lazer.enable =
-      lib.mkEnableOption "enable osu-lazer";
+    osu-lazer.enable = lib.mkEnableOption "enable osu-lazer";
   };
 
   config = lib.mkIf config.osu-lazer.enable {

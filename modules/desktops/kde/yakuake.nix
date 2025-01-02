@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    yakuake.enable =
-      lib.mkEnableOption "enable yakuake";
+    yakuake.enable = lib.mkEnableOption "enable yakuake";
   };
 
   config = lib.mkIf config.yakuake.enable {

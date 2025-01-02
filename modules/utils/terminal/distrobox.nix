@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    distrobox.enable =
-      lib.mkEnableOption "enable distrobox";
+    distrobox.enable = lib.mkEnableOption "enable distrobox";
   };
 
   config = lib.mkIf config.distrobox.enable {

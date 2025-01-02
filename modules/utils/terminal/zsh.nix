@@ -2,8 +2,7 @@
 
 {
   options = {
-    zsh.enable =
-      lib.mkEnableOption "enable zsh";
+    zsh.enable = lib.mkEnableOption "enable zsh";
   };
 
   config = lib.mkIf config.zsh.enable {
@@ -17,7 +16,7 @@
         # System management
         sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
         calc = "nix shell nixpkgs#python3 --command python";
-      };  
+      };
       ohMyZsh = {
         enable = true;
         theme = "frisk";

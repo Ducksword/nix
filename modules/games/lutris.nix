@@ -1,9 +1,13 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
-    lutris.enable =
-      lib.mkEnableOption "enable lutris";
+    lutris.enable = lib.mkEnableOption "enable lutris";
   };
 
   config = lib.mkIf config.lutris.enable {

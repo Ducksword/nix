@@ -2,8 +2,7 @@
 
 {
   options = {
-    vmware.enable =
-      lib.mkEnableOption "enable vmware";
+    vmware.enable = lib.mkEnableOption "enable vmware";
   };
 
   config = lib.mkIf config.vmware.enable {

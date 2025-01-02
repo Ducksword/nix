@@ -3,7 +3,7 @@
   imports = [
     # default profile
     ../../modules/default.nix
-    
+
     # utils
     ../../modules/utils/terminal/default.nix
     ../../modules/utils/graphical/default.nix
@@ -27,5 +27,5 @@
   # games
   lutris.enable = true;
   prismlauncher.enable = true;
-  osu-lazer.enable =true;
+  osu-lazer.enable = true;
 }
