@@ -13,13 +13,13 @@
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./desktop/configuration.nix
+        ./hosts/desktop/configuration.nix
 
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.zach = import ./desktop/home.nix;
+          home-manager.users.zach = import ./hosts/desktop/home.nix;
         }
       ];
     };
