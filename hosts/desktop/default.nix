@@ -8,7 +8,6 @@
     ../../modules/desktops/kde/default.nix
 
     ../../modules/config/games.nix
-    ../../modules/config/utils.nix
   ];
 
   # utils/terminal
