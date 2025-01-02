@@ -9,7 +9,7 @@
 
   outputs = inputs@{ self, nixpkgs, ... }: {
 
-    # Desktop Config
+    # Desktop config
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -24,6 +24,7 @@
       ];
     };
 
+    # Surface config
     nixosConfigurations.surface = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
