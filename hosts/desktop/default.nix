@@ -25,4 +25,5 @@
 
   # games
   lutris.enable = true;
+  prismlauncher.enable = true;
 }
