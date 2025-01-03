@@ -28,4 +28,5 @@
   lutris.enable = true;
   prismlauncher.enable = true;
   osu-lazer.enable = true;
+  bolt-launcher.enable = true;
 }
