@@ -23,6 +23,7 @@
     };
 
     # neovim
+    
 
     environment.systemPackages = with pkgs; [
       just # like make
