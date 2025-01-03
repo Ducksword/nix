@@ -23,6 +23,7 @@
   # utils/graphical
   vmware.enable = true;
   parsec.enable = true;
+  vscode.enable = true;
 
   # games
   lutris.enable = true;

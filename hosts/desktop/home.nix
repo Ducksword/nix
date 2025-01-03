@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -74,15 +74,6 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      jnoortheen.nix-ide
-      nefrob.vscode-just-syntax
-      christian-kohler.path-intellisense
-      mhutchie.git-graph
-    ];
-  };
 
   programs.git = {
     enable = true;

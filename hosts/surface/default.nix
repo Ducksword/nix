@@ -1,22 +1,11 @@
-{  pkgs, ... }:
+{ ... }:
 {
   imports = [
     ../../modules/default.nix
+    ../../modules/utils/graphical
   ];
 
-  environment.systemPackages = with pkgs; [
-
-    (vscode-with-extensions.override {
-        vscodeExtensions = with vscode-extensions; [
-          jnoortheen.nix-ide
-          nefrob.vscode-just-syntax
-          christian-kohler.path-intellisense
-          mhutchie.git-graph
-          ms-vscode-remote.remote-ssh
-          ms-vscode-remote.remote-ssh-edit
-        ];
-    })
-  ];
+  vscode.enable = true;
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
