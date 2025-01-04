@@ -1,18 +1,20 @@
 { ... }:
 {
   imports = [
-    # default profile
     ../../modules/default.nix
 
-    # utils
-    ../../modules/utils/terminal/default.nix
-    ../../modules/utils/graphical/default.nix
-
-    # kde desktop
-    ../../modules/desktops/kde/default.nix
-
-    # games
-    ../../modules/games/default.nix
+    # # default profile
+    # ../../modules/default.nix
+# 
+    # # utils
+    # ../../modules/utils/terminal/default.nix
+    # ../../modules/utils/graphical/default.nix
+# 
+    # # kde desktop
+    # ../../modules/desktops/kde/default.nix
+# 
+    # # games
+    # ../../modules/games/default.nix
   ];
 
   # utils/terminal

@@ -1,10 +1,12 @@
 { ... }:
 {
   imports = [
-    # imports all users
+    ./desktops/default.nix
+    ./games/default.nix
     ./users/default.nix
 
-    # modules
+    
+    ./utils/graphical/default.nix
     ./utils/terminal/default.nix
   ];
 

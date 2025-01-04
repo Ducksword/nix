@@ -10,8 +10,13 @@
     programs.zsh = {
       enable = true;
       enableCompletion = true;
-      autosuggestions.enable = true;
+      autosuggestions = {
+        enable = true;
+        async = true;
+      };
       syntaxHighlighting.enable = true;
+      enableBashCompletion = true;
+
       shellAliases = {
         # System management
         shell = "nix shell nixpkgs#";
