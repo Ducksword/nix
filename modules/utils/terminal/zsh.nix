@@ -14,7 +14,7 @@
       syntaxHighlighting.enable = true;
       shellAliases = {
         # System management
-        sw = "sudo nixos-rebuild switch --flake '/home/zach/nix#desktop'";
+        shell = "nix shell nixpkgs#";
         calc = "nix shell nixpkgs#python3 --command python";
       };
       ohMyZsh = {
