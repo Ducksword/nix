@@ -29,7 +29,9 @@
       just # like make
       nixd # nix lsp
       nixfmt-rfc-style # nix format
+
       git
+      git-credential-manager
     ];
 
   };
