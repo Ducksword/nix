@@ -21,6 +21,7 @@
   distrobox.enable = true;
   zsh.enable = true;
   editor.enable = true;
+  tmux.enable = true;
 
   # utils/graphical
   vmware.enable = true;
