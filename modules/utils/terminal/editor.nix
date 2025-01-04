@@ -23,15 +23,17 @@
     };
 
     # neovim
-    
+
+    # git
+    programs.git = {
+      enable = true;
+    };
 
     environment.systemPackages = with pkgs; [
       just # like make
       nixd # nix lsp
       nixfmt-rfc-style # nix format
-
-      git
-      git-credential-manager
+      lazygit
     ];
 
   };
