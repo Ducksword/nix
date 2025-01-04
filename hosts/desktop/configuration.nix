@@ -119,4 +119,7 @@
   # Change kernel version
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  # Enable zram
+  zramSwap.enable = true;
+
 }

@@ -19,7 +19,7 @@
 
       shellAliases = {
         # System management
-        shell = "nix shell nixpkgs#";
+        btop = "nix shell nixpkgs#btop --command btop";
         calc = "nix shell nixpkgs#python3 --command python";
       };
       ohMyZsh = {
