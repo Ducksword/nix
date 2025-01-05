@@ -17,6 +17,9 @@
     # ../../modules/games/default.nix
   ];
 
+  # desktop
+  kde.enable = true;
+
   # utils/terminal
   distrobox.enable = true;
   zsh.enable = true;
