@@ -25,6 +25,8 @@
         modules = [
           ./hosts/desktop/configuration.nix
 
+          ./modules/flatpak.nix
+
           # inputs.home-manager.nixosModules.home-manager
           # {
           #   home-manager.useGlobalPkgs = true;

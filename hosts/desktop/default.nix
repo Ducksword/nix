@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
     ../../modules/default.nix
@@ -34,6 +34,11 @@
   # games
   lutris.enable = true;
   prismlauncher.enable = true;
-  osu-lazer.enable = true;
-  bolt-launcher.enable = true;
+  osu-lazer.enable = false;
+  bolt-launcher.enable = false;
+
+  programs.obs-studio = {
+    enable = true;
+    plugins = [ pkgs.obs-studio-plugins.obs-vaapi ];
+  };
 }
