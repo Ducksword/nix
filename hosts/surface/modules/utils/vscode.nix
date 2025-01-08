@@ -18,6 +18,6 @@
   };
   environment.systemPackages = with pkgs; [
     nixd
-    nixpkgs-fmt
+    nixfmt-rfc-style # nix format
   ];
 }
