@@ -11,10 +11,13 @@
         nefrob.vscode-just-syntax
         ms-vscode-remote.remote-ssh
         ms-vscode-remote.remote-ssh-edit
+        
+        vscode-icons-team.vscode-icons
       ];
     };
   };
   environment.systemPackages = with pkgs; [
     nixd
+    nixpkgs-fmt
   ];
 }

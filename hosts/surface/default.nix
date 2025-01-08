@@ -1,5 +1,8 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./modules/core/default.nix
+  ];
   # Enable zram
   zramSwap.enable = true;
 

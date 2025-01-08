@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   home-manager.users.zach = {
     programs.git = {
@@ -7,4 +7,9 @@
       userEmail = "Diabotek@proton.me";
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    lazygit
+  ];
+
 }
