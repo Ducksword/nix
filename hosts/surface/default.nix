@@ -1,9 +1,9 @@
 { pkgs, ... }:
 {
   imports = [
-    ./modules/core/default.nix
-    ./modules/desktops/default.nix
-    ./modules/utils/pack/desktop.nix
+    ../../modules/core/default.nix
+    ../../modules/desktops/default.nix
+    ../../modules/utils/pack/desktop.nix
   ];
   # Desktop
   gnome.enable = true;
