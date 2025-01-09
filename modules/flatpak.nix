@@ -12,6 +12,7 @@
       # flatpak install -y com.obsproject.Studio && \
       flatpak install -y sh.ppy.osu && \
       flatpak install -y com.adamcake.Bolt && \
+      flatpak install -y org.videolan.VLC && \
       flatpak update -y
     '';
   };
