@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./gnome/default.nix
+    ./gnome/gnome.nix
   ];
 
   home-manager.users.zach = {
