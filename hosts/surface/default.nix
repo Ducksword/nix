@@ -1,8 +1,13 @@
 { pkgs, ... }:
 {
   imports = [
-    ./modules/core/default.nix
+    ./modules/utils/vscode.nix
+    ./modules/utils/git/git.nix
+    ./modules/desktops/default.nix
   ];
+  # Desktop
+  gnome.enable = true;
+
   # Enable zram
   zramSwap.enable = true;
 
