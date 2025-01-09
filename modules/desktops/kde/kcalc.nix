@@ -6,9 +6,7 @@
 }:
 
 {
-  options = {
-    kcalc.enable = lib.mkEnableOption "enable kcalc";
-  };
+  options.kcalc.enable = lib.mkEnableOption "enable kcalc";
 
   config = lib.mkIf config.kcalc.enable {
     environment.systemPackages = with pkgs; [

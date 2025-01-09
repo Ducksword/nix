@@ -1,32 +1,15 @@
-{ config, lib, ... }:
-
+{ lib, config, ... }:
 {
-  imports = [
-    ./yakuake.nix # Drop down terminal
-    ./kcalc.nix
-    ./partitionmanager.nix
-  ];
+  options.gnome.enable = lib.mkEnableOption "enable gnome";
 
-  options.kde.enable = lib.mkEnableOption "enable kde";
-
-  config = lib.mkIf config.kde.enable {
-
-    # options
-    partitionmanager.enable = true;
-    kcalc.enable = true;
-    yakuake.enable = false; # Drop down terminal
-
-
-    # Enable networking
-    networking.networkmanager.enable = true;
+  config = lib.mkIf config.gnome.enable {
 
     # Enable the X11 windowing system.
-    # You can disable this if you're only using the Wayland session.
     services.xserver.enable = true;
 
-    # Enable the KDE Plasma Desktop Environment.
-    services.displayManager.sddm.enable = true;
-    services.desktopManager.plasma6.enable = true;
+    # Enable the GNOME Desktop Environment.
+    services.xserver.displayManager.gdm.enable = true;
+    services.xserver.desktopManager.gnome.enable = true;
 
     # Configure keymap in X11
     services.xserver.xkb = {

@@ -1,8 +1,11 @@
 { ... }:
-
 {
   imports = [
-    ./graphical/default.nix
-    ./terminal/default.nix
+    ./git/git.nix
+    ./distrobox.nix
+    ./editor.nix
+    ./tmux.nix
+    ./vscode.nix
+    ./zsh.nix
   ];
 }

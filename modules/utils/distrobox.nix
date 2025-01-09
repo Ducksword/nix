@@ -6,9 +6,7 @@
 }:
 
 {
-  options = {
-    distrobox.enable = lib.mkEnableOption "enable distrobox";
-  };
+  options.distrobox.enable = lib.mkEnableOption "enable distrobox";
 
   config = lib.mkIf config.distrobox.enable {
     # Enable podman and distrobox

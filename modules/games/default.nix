@@ -1,12 +1,12 @@
 { ... }:
 {
   imports = [
-    ./steam.nix
     ./lutris.nix
     ./prismlauncher.nix
-    ./osu-lazer.nix
-    ./bolt-launcher.nix
+    ./steam.nix
   ];
-
   steam.enable = true;
+
+  lutris.enable = true;
+  prismlauncher.enable = true;
 }
