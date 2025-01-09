@@ -44,7 +44,7 @@
         modules = [
           ./hosts/surface/configuration.nix
           ./hosts/surface/modules/default.nix
-          ./hosts/surface/modules/desktops/gnome/gnome.nix
+          ./hosts/surface/modules/desktops/gnome/default.nix
 
           # for surface kernel
           nixos-hardware.nixosModules.microsoft-surface-common
