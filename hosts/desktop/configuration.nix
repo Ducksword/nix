@@ -25,10 +25,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vesktop
-    spotify
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -56,15 +52,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
-
-  # Change kernel version
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  # Enable zram
-  zramSwap.enable = true;
-
-  # Virtmanager
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
 }

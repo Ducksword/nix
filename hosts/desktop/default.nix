@@ -41,4 +41,14 @@
     enable = true;
     plugins = [ pkgs.obs-studio-plugins.obs-vaapi ];
   };
+
+  # Change kernel version
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Enable zram
+  zramSwap.enable = true;
+
+  # Virtmanager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }
