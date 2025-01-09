@@ -5,4 +5,5 @@
   ];
 
   floorp.enable = true;
+  vesktop.enable = true;
 }
