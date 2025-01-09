@@ -2,6 +2,7 @@
 {
   imports = [
     ./gnome/gnome.nix
+    ./kde/kde.nix
   ];
 
   home-manager.users.zach = {
