@@ -6,9 +6,7 @@
 }:
 
 {
-  options = {
-    editor.enable = lib.mkEnableOption "enable editors";
-  };
+  options.editor.enable = lib.mkEnableOption "enable editors";
 
   config = lib.mkIf config.editor.enable {
     # nano
@@ -22,18 +20,9 @@
       ";
     };
 
-    # neovim
-
-    # git
-    programs.git = {
-      enable = true;
-    };
 
     environment.systemPackages = with pkgs; [
       just # like make
-      nixd # nix lsp
-      nixfmt-rfc-style # nix format
-      lazygit
     ];
 
   };

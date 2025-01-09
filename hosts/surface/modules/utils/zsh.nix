@@ -1,9 +1,7 @@
 { lib, config, ... }:
 
 {
-  options = {
-    zsh.enable = lib.mkEnableOption "enable zsh";
-  };
+  options.zsh.enable = lib.mkEnableOption "enable zsh";
 
   config = lib.mkIf config.zsh.enable {
     # Enable zsh

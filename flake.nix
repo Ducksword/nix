@@ -43,8 +43,6 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/surface/configuration.nix
-          ./hosts/surface/modules/core/default.nix
-          ./hosts/surface/modules/desktops/default.nix
 
           # for surface kernel
           nixos-hardware.nixosModules.microsoft-surface-common

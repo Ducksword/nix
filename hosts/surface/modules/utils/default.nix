@@ -1,9 +1,12 @@
 { ... }:
 {
   imports = [
+    ./git/git.nix
     ./distrobox.nix
-    ./zsh.nix
     ./editor.nix
+    ./flatpak.nix
     ./tmux.nix
+    ./vscode.nix
+    ./zsh.nix
   ];
 }
