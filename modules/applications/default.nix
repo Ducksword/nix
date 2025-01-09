@@ -1,8 +1,9 @@
 { ... }:
 {
   imports = [
+    ./flatpak.nix
     ./floorp.nix
-    ./vesktop.nix
     ./spotify.nix
+    ./vesktop.nix
   ];
 }

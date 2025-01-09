@@ -13,7 +13,7 @@
       script = ''
         flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && \
         flatpak install -y com.github.tchx84.Flatseal && \
-        # flatpak install -y com.obsproject.Studio && \
+        flatpak install -y com.obsproject.Studio && \
         flatpak install -y sh.ppy.osu && \
         flatpak install -y com.adamcake.Bolt && \
         flatpak install -y org.videolan.VLC && \
