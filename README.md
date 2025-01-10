@@ -11,3 +11,5 @@
   # Trusts user for remote rebuild
   nix.settings.trusted-users = [ "@wheel" ];
 ```
+Use SCP to copy the hardware-configuration.nix \
+to flake repo
