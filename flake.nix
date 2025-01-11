@@ -10,6 +10,10 @@
 
     # nixos-hardware https://github.com/NixOS/nixos-hardware
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    # disko
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -17,6 +21,7 @@
       home-manager,
       nixpkgs,
       nixos-hardware,
+      disko,
       ...
     }:
     {
@@ -63,6 +68,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
           }
+
+          disko.nixosModules.disko
         ];
       };
 
