@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 {
-  options.guest-tools.enable = lib.mkEnableOption "virtualisation guest tools";
+  options.guestTools.enable = lib.mkEnableOption "virtualisation guest tools";
 
   config = lib.mkIf config.guestTools.enable {
     # QEMU/KVM Guest Tools

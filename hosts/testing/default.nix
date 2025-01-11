@@ -13,5 +13,5 @@
   zramSwap.enable = true;
 
   # guest tools
-  guest-tools.enable = true;
+  guestTools.enable = true;
 }
