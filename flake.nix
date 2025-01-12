@@ -73,5 +73,24 @@
         ];
       };
 
+      # t420
+      nixosConfigurations.t420 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/t420/configuration.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+          }
+
+          disko.nixosModules.disko
+
+          # for t420 hardware
+          nixos-hardware.nixosModules.lenovo-thinkpad-t420
+        ];
+      };
+
     };
 }

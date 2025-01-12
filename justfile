@@ -20,3 +20,14 @@ nixos-anywhere-hw:
     nix run github:nix-community/nixos-anywhere -- --generate-hardware-config \
     nixos-generate-config ./hosts/testing/hardware-configuration.nix --flake \
     .#testing --target-host root@192.168.122.87
+
+
+
+
+t420-deploy:
+    nix run github:nix-community/nixos-anywhere -- --generate-hardware-config \
+    nixos-generate-config ./hosts/t420/hardware-configuration.nix --flake \
+    .#t420 --target-host root@192.168.0.134
+
+t420-update:
+    nixos-rebuild boot --target-host zach@192.168.0.133 --use-remote-sudo --flake .#t420
