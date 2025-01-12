@@ -14,7 +14,7 @@ surface:
     nixos-rebuild switch --target-host zach@192.168.0.221 --use-remote-sudo --flake .#surface
 
 vm-test:
-    nixos-rebuild boot --target-host root@192.168.122.87 --flake .#testing
+    nixos-rebuild boot --target-host zach@192.168.122.88 --use-remote-sudo --flake .#testing
 
 nixos-anywhere-hw:
     nix run github:nix-community/nixos-anywhere -- --generate-hardware-config \

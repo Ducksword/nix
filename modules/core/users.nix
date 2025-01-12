@@ -9,5 +9,6 @@
       "wheel"
       "libvirtd"
     ];
+    initialPassword = "123";
   };
 }
