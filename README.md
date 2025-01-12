@@ -1,15 +1,8 @@
 # nix
 
+# nixos-anywhere
 ```
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-  # Trusts user for remote rebuild
-  nix.settings.trusted-users = [ "@wheel" ];
+nix run github:nix-community/nixos-anywhere -- --generate-hardware-config \
+nixos-generate-config ./hosts/***/hardware-configuration.nix --flake \
+.#*** --target-host root@***
 ```
-Use SCP to copy the hardware-configuration.nix \
-to flake repo
