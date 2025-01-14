@@ -37,6 +37,8 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
           }
+
+          disko.nixosModules.disko
         ];
       };
 
