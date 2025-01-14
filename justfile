@@ -41,4 +41,4 @@ testing-switch:
 
 
 desktop-backup:
-    rsync -avz /home/zach /mnt/backup --info=progress2 --exclude-from="./backupExcludes"
+    rsync -az /home/zach /mnt/backup --info=progress2 --exclude-from="./backupExcludes"

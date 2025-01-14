@@ -2,6 +2,7 @@
 .cargo
 .java
 .local/share/Trash/
+.local/share/containers/
 .mozilla
 .parsec
 .parsec-persistent
