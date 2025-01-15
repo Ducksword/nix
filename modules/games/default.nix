@@ -7,6 +7,6 @@
   ];
   steam.enable = true;
 
-  lutris.enable = true;
+  lutris.enable = false;
   prismlauncher.enable = true;
 }

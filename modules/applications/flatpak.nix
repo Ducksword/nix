@@ -17,6 +17,7 @@
         flatpak install -y sh.ppy.osu && \
         flatpak install -y com.adamcake.Bolt && \
         flatpak install -y org.videolan.VLC && \
+        flatpak install -y net.lutris.Lutris && \
         flatpak update -y
       '';
     };
