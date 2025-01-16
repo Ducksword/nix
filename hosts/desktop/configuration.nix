@@ -9,7 +9,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./default.nix
-    ./disko.nix
+    # ./disko.nix
   ];
 
   # Bootloader.
