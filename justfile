@@ -12,7 +12,7 @@ desktop-test:
     sudo nixos-rebuild test --flake .#desktop
 
 desktop-switch:
-    sudo nixos-rebuild switch --flake .#desktop
+    sudo nixos-rebuild boot --flake .#desktop
 
 
 
