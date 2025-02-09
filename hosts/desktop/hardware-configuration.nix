@@ -8,36 +8,18 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "uas" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4f17d183-43fc-4dcb-9a8d-6f1adc3d375f";
-      fsType = "btrfs";
-      options = [ "subvol=rootfs" ];
-    };
-
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/4f17d183-43fc-4dcb-9a8d-6f1adc3d375f";
-      fsType = "btrfs";
-      options = [ "subvol=nix" ];
-    };
-
-  fileSystems."/partition-root" =
-    { device = "/dev/disk/by-uuid/4f17d183-43fc-4dcb-9a8d-6f1adc3d375f";
-      fsType = "btrfs";
-    };
-
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/4f17d183-43fc-4dcb-9a8d-6f1adc3d375f";
-      fsType = "btrfs";
-      options = [ "subvol=home" ];
+    { device = "/dev/disk/by-uuid/f7680e3e-e71c-45fb-99d1-3a1bfd0284af";
+      fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/D198-80FA";
+    { device = "/dev/disk/by-uuid/9BCC-53EE";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
@@ -51,9 +33,6 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp12s0u1u4u4u4.useDHCP = lib.mkDefault true;
-  # networking.interfaces.virbr0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.vmnet1.useDHCP = lib.mkDefault true;
-  # networking.interfaces.vmnet8.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp11s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
