@@ -8,7 +8,8 @@
 
     # Enable flatpak remote and install flatpaks
     systemd.services.flatpak = {
-      wantedBy = [ "multi-user.target" ];
+      wantedBy = [ "default.target" ];
+      after = [ "network.target" ];
       path = [ pkgs.flatpak ];
       script = ''
         flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && \
