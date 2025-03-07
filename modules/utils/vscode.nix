@@ -7,7 +7,7 @@
     home-manager.users.zach = {
       programs.vscode = {
         enable = true;
-        extensions = with pkgs.vscode-extensions; [
+        profiles.default.extensions = with pkgs.vscode-extensions; [
           christian-kohler.path-intellisense
           mhutchie.git-graph          
 
