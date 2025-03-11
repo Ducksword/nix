@@ -35,7 +35,7 @@
 
   # nfs mounts
   fileSystems."/mnt/backup" = {
-    device = "192.168.0.62:/mnt/user/backup";
+    device = "192.168.0.63:/mnt/user/backup";
     fsType = "nfs";
     options = [
       "x-systemd.automount"
