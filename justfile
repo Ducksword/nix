@@ -17,8 +17,8 @@ desktop-switch:
 
 
 
-surface-switch:
-    nixos-rebuild switch --target-host zach@192.168.0.221 --use-remote-sudo --flake .#surface
+surface-boot:
+    nixos-rebuild boot --target-host zach@192.168.0.221 --use-remote-sudo --flake .#surface
 
 
 
