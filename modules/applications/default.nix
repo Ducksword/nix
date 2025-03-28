@@ -5,5 +5,6 @@
     ./floorp.nix
     ./spotify.nix
     ./vesktop.nix
+    ./solaar.nix
   ];
 }
