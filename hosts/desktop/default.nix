@@ -29,6 +29,7 @@
 
   environment.systemPackages = with pkgs; [
     parsec-bin
+    nvtopPackages.full
   ];
 
   virtualisation.vmware.host.enable = true;
