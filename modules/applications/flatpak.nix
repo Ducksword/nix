@@ -19,6 +19,7 @@
         flatpak install -y com.adamcake.Bolt && \
         flatpak install -y org.videolan.VLC && \
         flatpak install -y net.lutris.Lutris && \
+        flatpak install -y info.cemu.Cemu && \
         flatpak update -y
       '';
     };
