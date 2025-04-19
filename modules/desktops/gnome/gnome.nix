@@ -1,8 +1,21 @@
-{ lib, config, ... }:
+{ lib, config, pkgs, ... }:
 {
+  imports = [
+    # ./gnome.nix
+  ];
+
   options.gnome.enable = lib.mkEnableOption "enable gnome";
 
   config = lib.mkIf config.gnome.enable {
+
+    # extensions
+    environment.systemPackages = with pkgs.gnomeExtensions; [
+      vitals
+      caffeine
+    ];
+
+    # options
+    # gnomeExtensions.enable = false;
 
     # Enable the X11 windowing system.
     services.xserver.enable = true;
