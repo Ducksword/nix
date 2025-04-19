@@ -32,7 +32,11 @@
     nvtopPackages.full
   ];
 
-  virtualisation.vmware.host.enable = true;
+  # Enable Vmware
+  ## Curently not working
+  ##        > Unfortunately, we cannot download file VMware-Workstation-Full-17.6.3-24583834.x86_64.bundle automatically.
+  ##        > Please go to https://www.vmware.com/go/downloadworkstation-linux to download it yourself, and add it to the Nix store
+  ##  virtualisation.vmware.host.enable = true;
 
   # nfs mounts
   fileSystems."/mnt/backup" = {
