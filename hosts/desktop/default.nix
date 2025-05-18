@@ -24,7 +24,12 @@
   zramSwap.enable = true;
 
   # Virtmanager
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd =
+  {
+    enable = true;
+    qemu.package = pkgs.qemu_full;
+    qemu.swtpm.enable = true;
+  };
   programs.virt-manager.enable = true;
 
   environment.systemPackages = with pkgs; [
