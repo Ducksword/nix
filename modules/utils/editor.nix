@@ -23,6 +23,8 @@
 
     environment.systemPackages = with pkgs; [
       just # like make
+      vim
+      nerd-fonts.ubuntu-mono
     ];
 
   };
