@@ -6,7 +6,7 @@
     ../../modules/desktops/default.nix
     ../../modules/games/default.nix
     ../../modules/utils/pack/desktop.nix
-    ../../modules/utils/ollama.nix
+    # ../../modules/utils/ollama.nix
   ];
 
   # Desktop
