@@ -37,6 +37,8 @@
     nvtopPackages.full
     fzf
     fzf-zsh
+    
+    ptyxis
   ];
 
   # Enable Vmware

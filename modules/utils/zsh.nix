@@ -21,6 +21,8 @@
         calc = "nix shell nixpkgs#python3 --command python";
         rpi = "nix shell nixpkgs#rpi-imager --command rpi-imager";
         lg = "lazygit";
+
+        ls = "ls -lha --color";
       };
       ohMyZsh = {
         enable = true;
