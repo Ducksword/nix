@@ -14,6 +14,9 @@ in
 
     # default packages
     environment.systemPackages = with pkgs; [
+      just
+      lazygit
+      btop
     ];
 
     # git

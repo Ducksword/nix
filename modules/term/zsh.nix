@@ -28,7 +28,6 @@ in
       };
 
       shellAliases = {
-        btop = "nix shell nixpkgs#btop --command btop";
         lg = "lazygit";
 
         ls = "ls -h --color";

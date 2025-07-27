@@ -61,6 +61,10 @@
     zsh.enable = true; # Enable Zsh shell.
   };
 
+  virtualisation = {
+    virtualbox.enable = true; # Enable VirtualBox virtualization support.
+  };
+
   # Flatpak
   services.flatpak.enable = true;
 

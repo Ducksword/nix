@@ -1,3 +1,6 @@
+update:
+	nix flake update
+
 install-btrfs:
 	./scripts/install-btrfs.sh
 
@@ -17,12 +20,6 @@ install-hm-zach:
 
 install-flatpak:
 	./scripts/install-flatpak.sh
-
-update:
-	nix flake update
-	just desktop-boot
-	nixos-rebuild build --no-build-output --flake .#surface
-	rm result
 
 gc:
 	sudo nix-collect-garbage -d
