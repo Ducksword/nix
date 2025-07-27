@@ -14,8 +14,6 @@ in
 
     # default packages
     environment.systemPackages = with pkgs; [
-      nixd
-      just
     ];
 
     # git
@@ -27,6 +25,8 @@ in
           user.name = "Ducksword";
           user.email = "Diabotek@proton.me";
           init.defaultBranch = "main";
+
+          color.ui = "auto";
         }
       ];
     };
