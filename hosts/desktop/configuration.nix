@@ -13,7 +13,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./unraid-mnt.nix #TODO
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -63,12 +62,14 @@
     zsh.enable = true; # Enable Zsh shell.
   };
 
+  services = {
+    flatpak.enable = true;
+    unraidMnt.enable = true;
+  };
+
   virtualization = {
     virtualbox.enable = true; # Enable VirtualBox virtualization support.
   };
-
-  # Flatpak
-  services.flatpak.enable = true;
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
