@@ -13,9 +13,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./vscode.nix #TODO
     ./unraid-mnt.nix #TODO
-    ./virtualbox.nix #TODO
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -49,6 +47,10 @@
   # Set your time zone.
   time.timeZone = "America/Detroit";
 
+  apps = {
+    vscode.enable = true;
+  };
+
   # Enable the GNOME Desktop Environment.
   desktops.gnome = {
     enable = true;
@@ -61,7 +63,7 @@
     zsh.enable = true; # Enable Zsh shell.
   };
 
-  virtualisation = {
+  virtualization = {
     virtualbox.enable = true; # Enable VirtualBox virtualization support.
   };
 
