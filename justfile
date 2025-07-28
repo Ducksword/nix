@@ -1,12 +1,11 @@
 update:
 	nix flake update
 
-desktop-switch:
-	sudo nixos-rebuild switch --flake .#desktop
+switch:
+	sudo nixos-rebuild switch --flake .
 
-desktop-boot:
-	sudo nixos-rebuild boot --flake .#desktop
-	just hm-zach
+boot:
+	sudo nixos-rebuild boot --flake .
 
 gc:
 	sudo nix-collect-garbage -d

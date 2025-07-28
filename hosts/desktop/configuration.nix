@@ -51,10 +51,8 @@
   };
 
   # Enable the GNOME Desktop Environment.
-  desktops.gnome = {
-    enable = true;
-    disableExtraPackages = true;
-    enableExtensions = true;
+  desktops = {
+    kde.enable = true; # Enable KDE desktop environment.
   };
 
   term = {
