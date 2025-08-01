@@ -28,9 +28,9 @@ in
       };
 
       shellAliases = {
-        lg = "lazygit";
-
+        cdn = "cd ~/nix";
         ls = "ls -h --color";
+        lg = "lazygit";
       };
     };
   };

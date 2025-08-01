@@ -1,5 +1,9 @@
+just:
+	just --choose
+
 update:
 	nix flake update
+	flatpak update -y
 
 switch:
 	sudo nixos-rebuild switch --flake .
