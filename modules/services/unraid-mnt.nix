@@ -6,10 +6,10 @@ let
 in
 {
   options.services.unraidMnt.enable =
-    lib.mkEnableOption "Enables unraid backup mnt to /home/zach/backup";
+    lib.mkEnableOption "Enables unraid backup mnt to /mnt/backup";
 
   config = lib.mkIf cfg.enable {
-    fileSystems."/home/zach/backup" = {
+    fileSystems."/mnt/backup" = {
       device = "192.168.0.62:/mnt/user/backup";
       fsType = "nfs";
       options = [
