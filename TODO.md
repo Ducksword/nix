@@ -8,3 +8,10 @@ the configuration should also have an option for extra programs
 options.gnome.bloat.enable = false; <-- default true
 
 make a better install script
+
+
+You can enable runit with - pkg i termux-services
+Enable ssh as a service with - sv-enable ssh-agent
+                             - sv-enable sshd
+
+

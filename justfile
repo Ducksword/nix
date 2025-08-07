@@ -18,3 +18,6 @@ gc:
 install-nixos-desktop:
 	nixos-generate-config --show-hardware-config --root /mnt > ./hosts/desktop/hardware-configuration.nix
 	nixos-install --no-root-password --no-channel-copy --flake .#desktop
+
+amd-kvm:
+	sudo rmmod kvm_amd

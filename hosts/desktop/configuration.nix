@@ -79,7 +79,9 @@
   };
 
   environment.systemPackages = with pkgs; [
-    nerd-fonts.ubuntu
+    nerd-fonts.ubuntu-mono
+    vim-full
+    ptyxis
   ];
 
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .

@@ -28,7 +28,6 @@ in
       # packages
       gnome-extension-manager
       gnome-tweaks
-      ptyxis
     ];
 
     environment.gnome.excludePackages = with pkgs; [
