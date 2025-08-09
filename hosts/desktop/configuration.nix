@@ -66,7 +66,7 @@
   };
 
   virtualization = {
-    virtualbox.enable = true; # Enable VirtualBox virtualization support.
+    virtmanager.enable = true;
   };
 
   # Enable CUPS to print documents.
